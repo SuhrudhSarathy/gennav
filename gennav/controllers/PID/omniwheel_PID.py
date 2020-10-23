@@ -17,7 +17,13 @@ class OmniWheelPID(Controller):
     """
 
     def __init__(
-        self, maxX=0.25, maxY=0.25, xgains=PIDGains(1, 0, 0), ygains=PIDGains(1, 0, 0)
+        self,
+        maxX=0.25,
+        maxY=0.25,
+        xgains=PIDGains(1, 0, 0),
+        ygains=PIDGains(1, 0, 0),
+        *args,
+        **kwargs
     ):
         super(OmniWheelPID, self).__init__()
         self.maxX, self.maxY = maxX, maxY
