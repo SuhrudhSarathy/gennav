@@ -36,7 +36,7 @@ class UniformRectSampler(Sampler):
         ValueError: If goal is not specified when goal_sample_p > 0
     """
 
-    def __init__(self, min_x, max_x, min_y, max_y, goal=None, goal_sample_p=0):
+    def __init__(self, min_x, max_x, min_y, max_y, goal=None, goal_sample_p=0, *args, **kwargs):
         super(UniformRectSampler, self).__init__()
         self.min_x = min_x
         self.max_x = max_x
@@ -80,7 +80,7 @@ class UniformCircularSampler(Sampler):
         ValueError: If goal is not specified when goal_sample_p > 0
     """
 
-    def __init__(self, radius, centre=Point(), goal=None, goal_sample_p=0):
+    def __init__(self, radius, centre=Point(), goal=None, goal_sample_p=0, *args, **kwargs):
         super(UniformCircularSampler, self).__init__()
         self.centre = centre
         self.r = radius
