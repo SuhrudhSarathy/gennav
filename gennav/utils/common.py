@@ -88,7 +88,7 @@ class Trajectory:
         timestamps (:obj:`list` of :obj:`datetime.datetime`, optional): timstamps for each state
     """
 
-    def __init__(self, path, timestamps=None):
+    def __init__(self, path=[], timestamps=None):
         self.path = path
         self.timestamps = timestamps
 
